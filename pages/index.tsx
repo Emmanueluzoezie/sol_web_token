@@ -68,9 +68,11 @@ export default function Home() {
   }
 
   const texting = async() => {
-    const getdetails = axios.get("https://token-build.shuttleapp.rs/")
+    console.log("Started working....")
+    axios.get("https://token-build.shuttleapp.rs/")
       .then(response => {
         console.log(response.data);
+        console.log("Successfully worked...")
       })
       .catch(error => {
         console.error(error);
